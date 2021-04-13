@@ -22,7 +22,7 @@ export interface FieldState{
   formControl?: FormControl;
   controlName?: string;
   fieldType?: FieldTypes;
-  defaultValue?: string | boolean;
+  defaultValue?: string | boolean | any[];
   errorStateMatcher?: ErrorStateMatcher;
   validators?: ValidatorState[];
   options?: OptionModel[];
