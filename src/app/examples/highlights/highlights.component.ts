@@ -90,7 +90,7 @@ export class HighlightsComponent implements OnInit {
       if (contact){
         this.formify.addControl( new ContactGroupControl());
       }else{
-        this.formify.removeControl('contact');
+        this.formify.removeControl('contact');git status
       }
     });
   }
