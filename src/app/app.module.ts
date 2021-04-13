@@ -12,13 +12,15 @@ import {MembershipComponent} from './examples/membership/membership.component';
 import { RegisterComponent } from './examples/register/register.component';
 import { LoginComponent } from './examples/login/login.component';
 import { HighlightsComponent } from './examples/highlights/highlights.component';
+import { HeaderComponent } from './examples/header/header.component';
 @NgModule({
   declarations: [
     AppComponent,
     MembershipComponent,
     RegisterComponent,
     LoginComponent,
-    HighlightsComponent
+    HighlightsComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
