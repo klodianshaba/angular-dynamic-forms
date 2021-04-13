@@ -1,23 +1,25 @@
 @import "src/app/scss/mixins";
 .form-content {
   position: relative;
-  > div {
-    margin: 16px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    button{
-      position: absolute;
-      right: 0;
-      top: -10px;
-    }
-  }
   .full-name{
     display: flex;
     justify-content: space-between;
 
     > * {
       width: calc(50% - 5px);
+    }
+  }
+  .form-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    #github-svg{
+      font-size: 30px;
+    }
+    .label{
+        font-size: 18px;
+        font-weight: bold;
     }
   }
 }
