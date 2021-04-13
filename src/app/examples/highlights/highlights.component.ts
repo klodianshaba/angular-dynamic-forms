@@ -37,7 +37,7 @@ export class HighlightsComponent implements OnInit {
         code: `<form class="formify" [formGroup]="formify.formGroup" #form="ngForm" (ngSubmit)="onSubmit()">
   <formify-input formControlName="firstName" [fieldModel]="formify.field('firstName')"></formify-input>
   <formify-input formControlName="lastName" [fieldModel]="formify.field('lastName')"></formify-input>
-  <formify-select formControlName="language" [fieldModel]="formify.field('language')"></formify-select>
+  <formify-select formControlName="languages" [fieldModel]="formify.field('languages')"></formify-select>
   <formify-textarea formControlName="biography" [fieldModel]="formify.field('biography')"></formify-textarea>
   <formify-toggle formControlName="toggleColor" [fieldModel]="formify.field('toggleColor')"></formify-toggle>
   <formify-radio formControlName="color" [fieldModel]="formify.field('color')"></formify-radio>

@@ -3,7 +3,7 @@ import {Validators} from '@angular/forms';
 export class LanguageFieldControl extends FieldModel {
   constructor(overwrite: FieldState  = {}) {
     const  field: FieldModel = new FieldModel({
-      controlName: 'language',
+      controlName: 'languages',
       fieldType : FieldTypes.select,
       label: 'Choose languages',
       placeholder: 'language',
