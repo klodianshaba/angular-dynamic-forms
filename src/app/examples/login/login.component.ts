@@ -1,10 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {FieldModel, FieldTypes, FormifyModel, ValidatorModel} from '../../formify/models';
-import {EmailFieldControl, LanguageFieldControl, NameFieldControl, PasswordFieldControl, ToggleFieldControl} from '../../formify/fields';
-import {Validators} from '@angular/forms';
-import {MatchConfirmPassword} from '../../formify/models/error-mathers.config';
+import {FormifyModel} from '../../formify/models';
+import {EmailFieldControl, PasswordFieldControl} from '../../formify/fields';
 import { Highlights } from '../highlights/highlights.component';
-
 @Component({
   selector: 'formify-login',
   templateUrl: './login.component.html',
@@ -29,8 +26,4 @@ export class LoginComponent implements OnInit  {
       this.formify.loading(false);
     }, 1000);
   }
-  onToggleCollapse(): void{
-    this.collapse = !this.collapse;
-  }
-
 }

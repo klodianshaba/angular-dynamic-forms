@@ -1,13 +1,6 @@
 import {ChangeDetectorRef, Component, OnInit , OnDestroy} from '@angular/core';
 import {ArrayModel, FieldModel, FormifyModel} from '../../formify/models';
-import {
-  AppearanceFieldControl,
-  BiographyFieldControl,
-  ColorFieldControl,
-  LanguageFieldControl,
-  NameFieldControl,
-  ToggleFieldControl
-} from '../../formify/fields';
+import {AppearanceFieldControl, BiographyFieldControl, ColorFieldControl, LanguageFieldControl, NameFieldControl, ToggleFieldControl} from '../../formify/fields';
 import {AddressGroupControl, ContactGroupControl, ExercisesGroupControl} from '../../formify/groups';
 @Component({
   selector: 'formify-membership',
@@ -68,8 +61,5 @@ export class MembershipComponent implements OnInit , OnDestroy {
     setTimeout(() => {
       this.formify.loading(false);
     }, 1000);
-  }
-  onToggleCollapse(): void{
-    this.collapse = !this.collapse;
   }
 }

@@ -4,7 +4,6 @@ import {EmailFieldControl, LanguageFieldControl, NameFieldControl, PasswordField
 import {MatchConfirmPassword} from '../../formify/models/error-mathers.config';
 import {Validators} from '@angular/forms';
 import {Highlights} from '../highlights/highlights.component';
-
 @Component({
   selector: 'formify-register',
   templateUrl: './register.component.html',
@@ -36,18 +35,11 @@ export class RegisterComponent implements OnInit {
     options: MatchConfirmPassword  // options: ValidatorFn | ValidatorFn[] | AbstractControlOptions
   });
   constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
   onSubmit(): void{
     this.formify.loading(true);
     setTimeout(() => {
       this.formify.loading(false);
     }, 1000);
   }
-  onToggleCollapse(): void{
-    this.collapse = !this.collapse;
-  }
-
 }

@@ -3,21 +3,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  > div:first-child {
-    margin: 16px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    button{
-      position: absolute;
-      right: 0;
-      top: 8px;
-    }
-  }
   .form-content{
     width: 300px;
   }
-  formify-highlights{
+  formify-highlights ,formify-examples-header{
     width: 100%;
   }
 }
